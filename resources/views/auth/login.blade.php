@@ -196,13 +196,13 @@
     <div class="contact-area contact-bg-1 bg_image tmp-section-gap">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                <div class="col-lg-5 hidden md:block" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                     <div class="contact-inner">
                         <div class="section-head section-head-one-side text-align-left">
-                            <h2 class="title">Get free marketing
-                                consultation today</h2>
+                            <h2 class="title">Get free marketing exposure
+                                Post Your Ad</h2>
                             <p class="description mt--30">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor magnaaliqua.
+                                Login to post your ad and keep track of it in your account.
                             </p>
                         </div>
 
@@ -266,11 +266,9 @@
 
                     <div class="contact-form">
                         <div class="section-head section-head-one-side text-align-left">
-                            <span class="subtitle">GET IN TOUCH</span>
-                            <h2 class="title">Free consultation</h2>
+                            <span class="subtitle">Login</span>
+                            <h2 class="title">Free Signup</h2>
                         </div>
-
-
 
                         <form id="contact-form" action="#">
                             <div class="contact-form-wrapper row">
@@ -297,12 +295,6 @@
                                         <input class="input-field" type="text" id="subject" placeholder="Website" name="Website">
                                     </div>
                                 </div>
-
-                                {{-- <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <textarea class="input-field" placeholder="How can we help" name="contact-message" id="contact-message" required></textarea>
-                                    </div>
-                                </div> --}}
 
                                 <div class="col-lg-12">
                                     <div class="form-submit-group">
