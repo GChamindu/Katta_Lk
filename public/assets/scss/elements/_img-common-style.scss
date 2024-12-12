@@ -1,0 +1,31 @@
+.bg_image-1{
+    background-image: url(../images/banner/01.jpg);
+}
+.bg_image-2{
+    background-image: url(../images/banner/04.jpg);
+}
+.bg_image-3{
+    background-image: url(../images/banner/05.jpg);
+}
+
+.bg_image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.banner-one-height-control{
+    height: 850px;
+    @media #{$md-layout} {
+        height: 640px;
+    }
+    @media #{$sm-layout} {
+        height: 750px;
+    }
+    @media #{$large-mobile} {
+        height: 670px;
+    }
+}
+
+.bg-breadcrumb {
+    background-image: url(../images/breadcrumb/Bg.png);
+}

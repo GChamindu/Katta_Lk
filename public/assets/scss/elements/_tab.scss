@@ -1,0 +1,79 @@
+.tab-section{
+    &.tab-style-one {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);
+        .nav-tabs {
+            border-bottom: 1px solid #ebebeb;
+            li {
+                margin: 0;
+               
+                button {
+                    border-radius: 8px 8px 0 0;
+                    padding: 14px 35px;
+                    border: none;
+                    &.nav-link {
+                        color: var(--color-heading);
+                        transition: .5s;
+                        &.active {
+                            background-color: var(--color-heading);
+                            color: var(--color-white);
+                          
+                        }
+                        &:hover {
+                            border: none;
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+
+       .tab-content {
+        padding: 30px;
+        @media #{$small-mobile} {
+            padding: 30px 10px;
+        }
+        .tab-pane {
+                .description {
+                    margin-bottom: 0;
+                    margin-bottom: 30px;
+                }
+                .small-meta {
+                    display: flex;
+                    align-items: center;
+                    @media #{$sm-layout} {
+                        max-width: max-content;
+                    }
+                    .thumbnail {
+                        margin-right: 18px;
+                        
+                        img {
+                            max-width: max-content;
+                        }
+                    }
+                    .content {
+                        @media #{$sm-layout} {
+                            min-width: max-content;
+                        }
+                        .name {
+                            font-size: 30px;
+                            line-height: 60px;
+                            font-family: var(--font-secondary);
+                            color: var(--color-heading);
+                            font-weight: var(--s-bold);
+                        }
+
+                        .designation {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .btn-group {
+                    margin-top: 30px;
+                }
+            }
+       }
+    }
+}
+

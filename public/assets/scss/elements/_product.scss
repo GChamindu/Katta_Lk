@@ -1,0 +1,239 @@
+
+
+.bg-product-1{
+  background-image: url(../images/product/bg/01.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.container-full{
+  max-width: 1920px;
+  margin: auto;
+}
+
+
+.mySwiper-portfolio-1{
+  position: relative;
+  .swiper-slide{
+    .inner-content{
+      opacity: 0;
+      bottom: -20px;
+      transition: .3s;
+    }
+  }
+  .signle-product-start{
+    &::after{
+      transition: .3s !important;
+    }
+    &:hover{
+      .inner-content{
+        bottom: 30px;
+        opacity: 1;
+      }
+      &::after{
+        opacity: 1 !important;
+      }
+    }
+  }
+  .swiper-slide-active{
+    .inner-content{
+      bottom: 30px;
+      opacity: 1;
+    }
+  }
+  .swiper-pagination{
+    left: 50%;
+    display: flex;
+    gap: 0;
+    transform: translateX(-50%);
+    justify-content: center;
+    .swiper-pagination-bullet-active{
+      background: var(--color-primary);
+    }
+    .swiper-pagination-bullet{
+      background: var(--color-primary);
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev{
+    top: 45%;
+    opacity: 0;
+    transition: .3s;
+    &::after{
+      font-size: 16px;
+      color: #fff;
+      height: 50px;
+      min-width: 50px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      display: flex;
+      align-items: center;
+      transition: .3s;
+      justify-content: center;
+    }
+    &:hover{
+      &::after{
+        transform: scale(1.2);
+      }
+    }
+  }
+  .swiper-button-prev{
+    left: 120px;
+  }
+  .swiper-button-next{
+    right: 120px;
+  }
+  &:hover{
+    .swiper-button-next,
+    .swiper-button-prev{
+      opacity: 1;
+    }
+    .swiper-button-prev{
+      left: 60px;
+    }
+    .swiper-button-next{
+      right: 70px;
+    }
+  }
+}
+
+.mySwiper-portfolio-2-cons{
+  position: relative;
+  .swiper-slide{
+    .inner-content{
+      opacity: 0;
+      bottom: -20px;
+      transition: .3s;
+    }
+  }
+  .signle-product-start{
+    &::after{
+      transition: .3s !important;
+    }
+    &:hover{
+      .inner-content{
+        bottom: 30px;
+        opacity: 1;
+      }
+      &::after{
+        opacity: 1 !important;
+      }
+    }
+  }
+  .swiper-slide-active{
+    .inner-content{
+      bottom: 30px;
+      opacity: 1;
+    }
+  }
+  .swiper-pagination{
+    left: 50%;
+    display: flex;
+    gap: 0;
+    transform: translateX(-50%);
+    justify-content: center;
+    .swiper-pagination-bullet-active{
+      background: var(--color-primary);
+    }
+    .swiper-pagination-bullet{
+      background: var(--color-primary);
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev{
+    top: 45%;
+    opacity: 0;
+    transition: .3s;
+    &::after{
+      font-size: 16px;
+      color: #fff;
+      height: 50px;
+      min-width: 50px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      display: flex;
+      align-items: center;
+      transition: .3s;
+      justify-content: center;
+    }
+    &:hover{
+      &::after{
+        transform: scale(1.2);
+      }
+    }
+  }
+  .swiper-button-prev{
+    left: 120px;
+  }
+  .swiper-button-next{
+    right: 120px;
+  }
+  &:hover{
+    .swiper-button-next,
+    .swiper-button-prev{
+      opacity: 1;
+    }
+    .swiper-button-prev{
+      left: 60px;
+    }
+    .swiper-button-next{
+      right: 70px;
+    }
+  }
+}
+.signle-product-start{
+  overflow: hidden;
+  display: block;
+  position: relative !important;
+  max-width: max-content;
+  min-width: 100%;
+  .thumbnail{
+    display: block;
+    min-width: 100%;
+    img{
+      display: block;
+      min-width: 100%;
+    }
+  }
+
+  .inner-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    padding: 30px;
+    width: 83%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    a{
+      .title{
+        transition: .3s;
+        margin-bottom: 7px;
+      }
+      &:hover{
+        .title{
+          color: var(--color-primary);
+        }
+      }
+    }
+    span.designation{
+      font-size: 16px;
+      color: #6a6c71;
+    }
+
+    .tag {
+      width: 40px;
+      height: 25px;
+      background-color: #fff;
+      -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      position: absolute;
+      top: -24px;
+      left: 33px;
+    }
+  }
+}
+
+
+

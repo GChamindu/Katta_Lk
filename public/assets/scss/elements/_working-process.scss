@@ -1,0 +1,51 @@
+
+
+.single-services.construction{
+    .services-inner{
+        .thumbnail-rounded.border-top-left{
+            border-radius: 10px;
+            a{
+                border-radius: 10px;
+            }
+            img{
+                transform: scale(1.5);
+            }
+            .number-bg-round{
+                bottom: 6px;
+                span{
+                    margin-bottom: 0;
+                    font-size: 52px;
+                    font-weight: 700;
+                }
+            }
+        }
+        overflow: visible;
+    }
+    .services-inner .thumbnail.thumbnail-rounded{
+        overflow: visible;
+        &::after{
+            position: absolute;
+            content: "";
+            height: 109%;
+            width: 109%;
+            background: transparent;
+            border-radius: 50%;
+            border: 2.52px dashed #c5c5c5;
+            top: 50%;
+            left: 50%;
+            transition: 0.3s;
+            animation: none;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.bg-product-1.with-construction{
+    background-image: url(../images/product/bg/02.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+

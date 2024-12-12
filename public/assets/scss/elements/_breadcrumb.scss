@@ -1,0 +1,65 @@
+.breadcrumb-bg {
+    background-image: url(../images/breadcrumb/breadcrumb-bg-1.png);
+}
+
+.breadcrumb-area {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: " ";
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-image: var(--gradient-three);
+        z-index: -1;
+    }
+    
+}
+
+.breadcrumb-inner {
+    border: 1px solid #ffffff1f;
+    max-width: 630px;
+    margin: 0 auto;
+    padding: 40px 0;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    --webkit-backdrop-filter: blur(4px);
+    background-color: rgb(255 255 255 / 0%);
+    margin-top: 150px;
+    position: relative;
+    overflow: hidden;
+    @media #{$large-mobile} {
+        margin-top: 50px;
+    }
+    .title {
+        color: var(--color-white);
+        margin-bottom: 5px;
+        font-size: 40px;
+        @media #{$large-mobile} {
+            font-size: 32px;
+        }
+    }
+    .page-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+            color: var(--color-white);
+            &.icon {
+                padding: 0 10px;
+            }
+        }
+    } 
+}
+
+.circle-1 {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 100%;
+    top: -17px;
+    left: -14px;
+    background: #e42041ab;
+    filter: blur(40px);
+}

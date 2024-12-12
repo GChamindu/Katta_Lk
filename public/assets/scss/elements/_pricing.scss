@@ -1,0 +1,139 @@
+.pricing-area {
+    &.pricing-style-one {
+        background: linear-gradient(-98deg, #CCDFF7 0%, #EDF5FF 100%);
+    }
+}
+.scater-line{
+    animation: jump-1 8s linear infinite;
+}
+
+.pricing-table {
+    &.pricing-style-one {
+        background-color: var(--color-white);
+        border-radius: 8px;
+        text-align: center;
+        .pricing-header {
+            position: relative;
+            z-index: 8;
+            // background-color: #1273EB;
+            overflow: hidden;
+            border-radius: 8px 8px 0 0;
+            padding: 22px 0;
+            // background-image: url(../images/pricing/01.png);
+            // background-size: cover;
+            // background-repeat: no-repeat;
+            background:#f4f4f4;
+            .pricing-header-inner {
+                background-color: var(--color-secondary);
+                display: inline-block;
+                padding: 23px 40px;
+                border-radius: 6px;
+                .title {
+                    color: var(--color-white);
+                    margin-bottom: 13px;
+                    font-size: 20px;
+                    display: inline-block;
+                    line-height: 27px;
+                    font-family: var(--font-secondary);
+                    font-weight: var(--s-medium);
+                }
+
+                .price-wrap {
+                    .monthly-pricing {
+                        .amount {
+                            display: block;
+                            font-size: 42px;
+                            line-height: 30px;
+                            color: var(--color-white);
+                            position: relative;
+                            font-weight: 700;
+                            .zero {
+                                font-size: 22px;
+                                display: inline-block;
+                            }
+                            .dolour {
+                                font-size: 22px;
+                                display: inline-block;
+                                position: absolute;
+                                margin-top: -3px;
+                                left: -9px;
+                            }
+                        }
+                        .duration {
+                            color: var(--color-white);
+                            display: inline-block;
+                            font-size: 14px;
+                            font-weight: var(--p-regular);
+                            line-height: 19px;
+                        }
+                    }
+                }
+            }
+            .thumbnail {
+                position: absolute;
+                top: -7px;
+                left: -3px;
+                z-index: -1;
+                img {
+                   
+                }
+            }
+        }
+
+        .pricing-body {
+           margin-top: 40px;
+            
+            .plan-offer-list {
+                li {
+                    margin-bottom: 15px;
+                    margin-top: 0;
+                    color: #252525;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    i {
+                        display: inline-block;
+                        height: 17px;
+                        width: 17px;
+                        border: 1px solid var(--color-secondary);
+                        line-height: 16px;
+                        text-align: center;
+                        border-radius: 100%;
+                        color: var(--color-secondary);
+                        font-size: 12px;
+                        margin-right: 10px;
+                    }
+                    &.off {
+                        opacity: .6;
+                        i {
+                            color: var(--color-primary);
+                            border: 1px solid var(--color-primary);
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .pricing-bottom {
+            .pricing-btn {
+                padding: 40px 0;
+                .tmp-btn {
+                    border: 1px solid var(--color-body);
+                    border-radius: 30px;
+                    transition: .5s;
+                    line-height: 22px;
+                    padding: 16px 50px;
+                    display: inline-block;
+                    &:hover {
+                        background-color: var(--color-secondary);
+                        color: var(--color-white);
+                        border: 1px solid var(--color-secondary);
+                    }
+                }
+            }
+            
+        }
+        
+    }
+}

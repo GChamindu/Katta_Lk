@@ -1,0 +1,20 @@
+.error-inner {
+    max-width: 820px;
+    margin: 0 auto;
+    .thumbnail {
+
+    }
+
+    .title {
+        font-size: 36px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .description {
+      
+        font-size: 16px;
+        line-height: 28px;
+        color: var(--color-body);
+    }
+}

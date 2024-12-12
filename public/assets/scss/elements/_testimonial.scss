@@ -1,0 +1,337 @@
+.single-card {
+    &.card-horizontal {
+        .card-inner {
+            border-radius: 10px;
+            background: #ffffff;
+            padding: 50px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(#fff 0%, rgba(255, 255, 255, 0.2) 100%);
+            @media #{$sm-layout} {
+                padding: 20px;
+            }
+            @media #{$large-mobile} {
+                flex-direction: column-reverse;
+                gap: 30px;
+                align-items: flex-start;
+            }
+            .content {
+                .social-icons {
+                    margin-bottom: 20px;
+                }
+                .description {
+                    margin-bottom: 20px;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: var(--color-heading);
+                    font-weight: var(--p-regular);
+                    padding-right: 30px;
+                    margin-top: 15px;
+                    @media #{$large-mobile} {
+                        padding-right: 0;
+                    }
+                }
+                .content {
+                    &.content-without-bg{
+                        .name {
+                            font-size: 20px;
+                            font-weight: var(--s-bold);
+                            line-height: 17px;
+                            color: var(--color-heading);
+                            font-family: var(--font-secondary);
+                        }
+                        .designation {
+                            font-size: var(--font-size-b1);
+                            color: var(--color-body);
+                            line-height: 21px;
+                            font-weight: var(--s-regular);
+                            font-family: var(--font-secondary);
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+
+            .thumbnail {
+                position: relative;
+                img {
+                    max-width: max-content;
+                }
+            }
+        }
+        &.agency-testimonials{
+            border: 1px solid #f1f1f1;
+        }
+    }
+}
+
+.bg-1 {
+    background-image: url(../images/testimonial/bg-01.jpg)
+}
+
+.icon {
+    &.icon-quote {
+        height: 45px;
+        width: 45px;
+        background-color: var(--color-primary);
+        line-height: 45px;
+        text-align: center;
+        border-radius: 100%;
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        border: 2px solid var(--color-white);
+        i {
+            display: inline-block;
+            color: var(--color-white);
+            font-size: 20px;
+            // text-stroke: 2px transparent;
+            // -webkit-text-stroke: 2px #FFFFFF;
+            
+        }
+    }
+}
+
+.swiper-container-style-two{
+    overflow: hidden;
+}
+
+
+
+.bg-testimonials-1{
+    background-image: url(../images/testimonial/bg-01.jpg);
+}
+
+
+.testimonials-button-area{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    .button-next-prev{
+        .swiper-button-prev{
+            right: 65px;
+            left: auto;
+            @media #{$large-mobile} {
+                right: 90px;
+            }
+        }
+        .swiper-button-next{
+            right: 0;
+            left: auto;
+            @media #{$large-mobile} {
+                right: 35px;
+            }
+        }
+        .swiper-button-prev,
+        .swiper-button-next{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 1px solid var(--color-primary);
+            background: transparent;
+            color: var(--color-primary);
+            transition: .3s;
+            @media #{$large-mobile} {
+                top: 210px;
+                height: 40px;
+                width: 40px;
+            }
+            &::after{
+                font-size: 16px;
+                transition: .3s;
+            }
+            &:hover{
+                border: 1px solid transparent;
+                transform: scale(1.05);
+                background: var(--color-primary);
+                &::after{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
+// testimonial style two 
+
+.testimonial-area {
+    &.testimonial-style-two {
+        .single-testimonial {
+            background-color: var(--color-white);
+            border-radius: 8px;
+            .testimonial-header {
+                background: linear-gradient(-217deg, #00e7fe 0%, #0760cf 100%);
+                border-radius: 8px 8px 0 0;
+                padding: 50px;
+                @media #{$large-mobile} {
+                    padding: 25px;
+                }
+                .header-inner {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .content {
+                        display: flex;
+                        align-items: center;
+                        .content-left {
+                            .thumbnail {
+                                margin-right: 25px;
+                                img {
+
+                                }
+                            }
+                           
+                        }
+                        .content-right {
+
+                            .name {
+                                font-size: 22px;
+                                font-weight: var(--s-bold);
+                                line-height: 30px;
+                                color: var(--color-white);
+                            }
+
+                            .designation {
+                                font-size: 16px;
+                                line-height: 21px;
+                                font-weight: var(--s-regular);
+                                font-family: var(--font-secondary);
+                                color: var(--color-white);
+                                margin-top: 10px;
+
+                            }
+
+                        }
+
+                        
+                    }
+
+                    .icon {
+                        @media #{$large-mobile} {
+                            display: none;
+                        }
+                        i {
+                            color: var(--color-white);
+                            opacity: .1;
+                            font-size: 90px;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+            .testimonial-body {
+                padding: 45px;
+                box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.068);
+                @media #{$large-mobile} {
+                    padding: 25px;
+                }
+                .description {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+
+    &.testimonial-style-three  {
+        .tmp-testimonial-box {
+            &.style-three {
+                background-color: #ffffff57;
+                padding: 40px;
+                border-radius: 8px;
+                transition: background-color 0.3s ease;
+                position: relative;
+                z-index: 1;
+                @media #{$smlg-device} {
+                    padding: 25px;
+
+                }
+                &::before {
+                    content: " ";
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    left: 0;
+                    top: 0;
+                    background-image: var(--gradient-two);
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: .3s;
+                    border-radius: 8px;
+                    z-index: -1;
+                }
+                .testimonial-top {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 15px;
+                    .icon {
+                        i {
+                            font-size: 40px;
+                            text-stroke: 1px transparent;
+                            color: transparent;
+                            -webkit-text-stroke: 1px var(--color-heading);
+                            transition: .3s;
+                        }
+                    }
+                }
+                .testimonial-body{
+                    .description{
+                        transition: .3s;
+                    }
+                }
+                .clint-info-wrapper {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 30px;
+                    .thumbnail {
+                        margin-right: 22px;
+                    }
+                    .client-info {
+                        .title {
+                            font-size: 22px;
+                            font-weight: var(--s-bold);
+                            line-height: 30px;
+                            margin-bottom: 5px;
+                            transition: .3s;
+                        }
+                        .designation {
+                            font-family: var(--font-secondary);
+                            line-height: 21px;
+                            color: var(--color-heading);
+                            transition: .3s;
+                        }
+                    }
+                }
+                &:hover {
+                    .stars-group{
+                        .star{
+                            i{
+                                color: #fff;
+                            }
+                        }
+                    }
+                    &::before {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    .testimonial-body{
+                        .description{
+                            color: #fff;
+                        }
+                    }
+                    .client-info{
+                        .title{
+                            color: #fff;
+                        }
+                        .designation{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

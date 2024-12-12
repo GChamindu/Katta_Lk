@@ -1,0 +1,130 @@
+.quick-action-area {
+    &.quick-action-style-one {
+        background-image: var(--gradient-two);
+        position: relative;
+        overflow: hidden;
+        padding: 70px 0;
+        z-index: 0;
+        @media #{$large-mobile} {
+            position: relative;
+            overflow: hidden;
+            padding: 70px 0;
+            z-index: 0;
+            background: #03041c;
+            background-image: none;
+        }
+        .quick-action-inner {
+            display: flex;
+            justify-content: space-between;
+           @media #{$sm-layout} {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 30px;
+           }
+           .quick-action-left {
+            .description {
+                color: var(--color-white);
+                font-size: 30px;
+                line-height: 46px;
+                font-weight: var(--s-extra-bold);
+                max-width: 455px;
+                @media #{$large-mobile} {
+                    font-size: 21px;
+                    line-height: 1.3;
+                    font-weight: var(--s-extra-bold);
+                    max-width: 455px;
+                    font-weight: 400;
+                }
+            }
+           }
+           .quick-action-right {
+            .contact {
+                display: flex;
+                align-items: center;
+
+                .btn-rounded {
+                    margin-right: 30px;
+                }
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    @media #{$sm-layout} {
+                        align-items: flex-start;
+                    }
+                    .title {
+                        color: var(--color-white);
+                        font-size: 30px;
+                        line-height: 40px;
+                        font-weight: var( --s-regular);
+                        font-family: var( --font-secondary);
+                        margin-bottom: 5px;
+                        @media #{$large-mobile} {
+                            font-size: 22px;
+                            line-height: 1.2;
+                            font-weight: 500;
+                        }
+                    }
+                    .ph-number {
+                        color: var(--color-white);
+                        font-size: 30px;
+                        line-height: 40px;
+                        font-weight: var( --s-bold);
+                        font-family: var( --font-secondary);
+                        @media #{$large-mobile} {
+                            font-size: 22px;
+                            line-height: 1.2;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+            
+           }
+
+           
+
+
+        }
+
+        .dot-top {
+            position: absolute;
+            top: -52%;
+            left: 59%;
+        }
+
+        .dot-bottom {
+            position: absolute;
+            bottom: -53%;
+            left: 49%;
+        }
+
+        .carly-line {
+            position: absolute;
+            bottom: 31%;
+            left: 58%;
+            @media #{$large-mobile} {
+                display: none;
+            }
+        }
+        .shape {
+            position: absolute;
+            bottom: 0;
+            right: -13px;
+            z-index: -1;
+            @media #{$large-mobile} {
+                .thumbnail{
+                    filter: brightness(.3);
+                    opacity: .8;
+                }
+            }
+        }
+
+        .shape-2 {
+            position: absolute;
+            left: -12%;
+            top: 0;
+        }
+    }
+}

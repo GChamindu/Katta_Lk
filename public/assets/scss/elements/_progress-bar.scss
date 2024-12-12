@@ -1,0 +1,85 @@
+.single-progress-area {
+    &.progress-stye-one {
+        margin-bottom: 18px;
+        
+        .progress-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            
+            .name {
+                margin-bottom: 0;
+                font-size: 20px;
+                color: var(--color-heading);
+                font-family: var(--font-secondary);
+                font-weight: var(--s-bold);
+                line-height: 25px;
+            }
+            .parcent {
+                font-size: 20px;
+                color: var(--color-heading);
+                font-family: var(--font-secondary);
+                font-weight: var(--s-bold);
+            }
+        }
+        .progress {
+            height: 16px;
+            border-radius: 50px;
+            .progress-bar {
+                background-color: var(--color-primary);
+                border-radius: 50px;
+            }
+        }
+    }
+
+    &.progress-style-two {
+        margin-bottom: 30px;
+         
+        
+        .progress-top {
+            margin-bottom: 12px;
+            
+            .name {
+                margin-bottom: 0;
+                font-size: 20px;
+                color: var(--color-heading);
+                font-family: var(--font-secondary);
+                font-weight: var(--s-bold);
+                line-height: 25px;
+                @media #{$smlg-device} {
+                    font-size: 16px;
+                }
+            }
+            .parcent {
+                font-size: 35px;
+                font-family: var(--font-secondary);
+                font-weight: var(--s-bold);
+                line-height: 25px;
+                text-stroke: 1px transparent;
+                color: transparent;
+                -webkit-text-stroke: 1px var(--color-heading);
+            }
+        }
+        .progress {
+            height: 10px;
+            border-radius: 50px;
+            &.bg-color-purple {
+                background-color: #4b11eb40;
+            }
+            &.bg-white {
+                background-color: #E7E7E7;
+            }
+            
+            .progress-bar {
+                border-radius: 50px;
+                &.bg-gradient-two {
+                    background: var(--gradient-two);
+                }
+                &.bg--primary {
+                    background-color: var(--color-primary);
+                }
+            }
+        }
+    }
+}

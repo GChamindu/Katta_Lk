@@ -1,0 +1,170 @@
+.projects-details-inner {
+    .thumbnail {
+        img {
+            max-width:100%;
+            @media #{$smlg-device} {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .clients-projects-details {
+                    padding: 0 100px;
+                    position: relative;
+                    margin-top: -100px;
+                    @media #{$md-layout} {
+                        padding: 0 50px;
+                    }
+                    @media #{$sm-layout} {
+                        padding: 0 15px;
+                    }
+        .clients-details-inner {
+            background-color: var(--color-heading);
+            padding: 40px 50px;
+            @media #{$sm-layout} {
+                padding: 25px;
+            }
+            .title {
+                color: var(--color-white);
+                font-size: 20px;
+                line-height: 26px;
+                font-weight: var(--s-semi-bold);
+                border-bottom: 1px solid #1b1b1b;
+                padding-bottom: 20px;
+                margin-bottom: 24px;
+            }
+
+            .single-projects-details {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 30px;
+                .info {
+                    display: flex;
+                    align-items: center;
+                    .icon {
+                        height: 50px;
+                        width: 50px;
+                        line-height: 50px;
+                        background-color: var(--color-primary);
+                        border-radius: 100%;
+                        text-align: center;
+                        margin-right: 15px;
+                        i {
+                            color: var(--color-white);
+                        }
+                    }
+
+                    .content {
+                        .subtitle {
+                            color: var(--color-white);
+                            font-size: 16px;
+                            line-height: 26px;
+                            font-weight: var(--s-bold);
+                            margin-bottom: 0;
+                            font-family: var(--font-secondary);
+                        }
+
+                        .category {
+                            color: var(--color-white);
+                            font-size: 16px;
+                            line-height: 26px;
+                            font-weight: var(--s-regular);
+                            margin-bottom: 0;
+                            font-family: var(--font-secondary);
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.grow {
+    transform: scale(0.8);
+}
+.projects-details-wrapper {
+    margin-top: 50px;
+    .challenge-details {
+        display: flex;
+        margin-bottom: 8px;
+        .icon {
+            height: 16px;
+            min-width: 16px;
+            border: 1px solid var(--color-primary);
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            margin-top: 6px;
+            i {
+                color: var(--color-primary);
+                font-weight: var(--s-medium);
+                font-size: 10px;
+                display: inline-block;
+                
+            }
+
+            .description {
+                line-height: 24px;
+            }
+        }
+    }
+    .thumbnail {
+        width: 100%;
+        img {
+            width: 100%;
+            min-width: max-content;
+            @media #{$md-layout} {
+                min-width: 100%;
+            }
+            @media #{$sm-layout} {
+                min-width: 100%;
+            }
+        }
+    }
+}
+
+.mt-dec-pd{
+    margin-top: -60px;
+}
+
+
+.my-swiper-product-details,
+.mySwiper-recent-product{
+    z-index: 0;
+    .swiper-button-next,
+    .swiper-button-prev{
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: var(--color-primary);
+        transition: .3s;
+        &::after{
+            font-size: 18px;
+            color: #fff;
+        }
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    .swiper-button-next{
+        right: 60px;
+    }
+    .swiper-button-prev{
+        left: 60px;
+    }
+}
+
+.mySwiper-recent-product{
+    padding: 20px 20px;
+}
+
+
+
